@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".loginService.LogInFragment">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".loginService.LoginActivity">
+
+        <TextView
+            android:id="@+id/app_Text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:gravity="center"
+            android:text="@string/login"
+            android:textColor="@color/water_text"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/id_edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:ems="15"
+            android:paddingStart="15dp"
+            android:hint="@string/id_hint"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="50dp"
+            android:layout_below="@id/app_Text"
+            android:background="@drawable/login_input_form" />
+
+        <EditText
+            android:id="@+id/pwd_edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@id/id_edit_text"
+            android:layout_marginTop="15dp"
+            android:paddingStart="15dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:hint="@string/password_hint"
+            android:layout_centerHorizontal="true"
+            android:ems="15"
+            android:inputType="textPassword"
+            android:background="@drawable/login_input_form" />
+
+        <android.widget.Button
+            android:id="@+id/login_btn"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/pwd_edit_text"
+            android:background="@drawable/rounded_login_button"
+            android:text="@string/login_btn"
+            android:layout_marginTop="50dp"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/signUpTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_btn"
+            android:layout_alignStart="@id/login_btn"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="15dp"
+            android:text="Not a member? "
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/singUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_btn"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_toEndOf="@id/signUpTxt"
+            android:text=" Sign up"
+            android:textColor="@color/water_text"
+            android:textSize="10sp" />
+
+    </RelativeLayout>
+
+</FrameLayout>

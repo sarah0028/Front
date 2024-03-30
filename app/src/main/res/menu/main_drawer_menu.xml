@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_home"
+        android:icon="@drawable/home_icon"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/menu_voca"
+        android:icon="@drawable/vocabulary_image"
+        android:title="Vocabulary" />
+
+    <item
+        android:id="@+id/menu_add"
+        android:icon="@drawable/add_icon"
+        android:title="Add" />
+
+    <item
+        android:id="@+id/menu_quiz"
+        android:icon="@drawable/quiz_image"
+        android:title="Quiz" />
+    <item
+        android:id="@+id/menu_search"
+        android:icon="@drawable/search_icon"
+        android:title="Quiz" />
+
+</menu>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/toolbar_speaker"
+        android:icon="@drawable/speaker_image"
+        app:showAsAction="always"
+        android:title="toolbar_speaker" />
+    <item
+        android:id="@+id/toolbar_trans"
+        android:icon="@drawable/translation_image"
+        app:showAsAction="always"
+        android:title="toolbar_trans" />
+    <item
+        android:id="@+id/toolbar_bookmark"
+        android:icon="@drawable/bookmark_none"
+        app:showAsAction="always"
+        android:title="toolbar_bookmark" />
+
+    <item
+        android:id="@+id/toolbar_my_info"
+        android:icon="@drawable/my_page_image"
+        app:showAsAction="always"
+        android:title="myPage" />
+</menu>

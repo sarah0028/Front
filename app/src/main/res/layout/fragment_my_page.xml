@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".loginService.MyPageFragment">
+
+    <LinearLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#ffffff"
+        tools:context=".loginService.MyPageActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:layout_margin="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/scrapNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:text="scrap 개수"
+                android:textSize="24sp"
+                app:drawableTopCompat="@drawable/drawable_top_bookmark_customise" />
+            <TextView
+                android:id="@+id/scriptNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:layout_margin="5dp"
+                android:layout_gravity="center"
+                app:drawableTopCompat="@drawable/drawable_top_script_add_customise"
+                android:text="script 개수" />
+            <TextView
+                android:id="@+id/wordNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:layout_margin="5dp"
+                android:layout_gravity="center"
+                app:drawableTopCompat="@drawable/drawable_top_vocabulary_customise"
+                android:text="word 개수" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/rounded_my_page_list_header"
+                android:text="내 정보"
+                android:textColor="@color/white"
+                android:paddingStart="15dp"
+                android:textSize="20sp"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="30dp"/>
+
+            <ListView
+                android:id="@+id/myPageList"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="30dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:textSize="7sp"
+                android:gravity="right"
+                android:paddingEnd="15dp"
+                android:id="@+id/delete_member"
+                android:text="회원탈퇴"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

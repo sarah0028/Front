@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#f2f2f2"/>
+    <corners android:radius="20dp"/>
+    <padding android:left="0dp"
+        android:bottom="0dp"
+        android:right="0dp"
+        android:top="0dp"/>
+</shape>
+
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<shape xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:padding="10dp"-->
+<!--    android:shape="rectangle" >-->
+<!--    <solid android:color="@color/white" />   &lt;!&ndash; 배경색 &ndash;&gt;-->
+
+<!--    <stroke-->
+<!--        android:width="2dp"-->
+<!--        android:color="@color/water_text" /> &lt;!&ndash; 선색 &ndash;&gt;-->
+
+<!--    <corners android:radius="5dp"/>-->
+
+<!--</shape>-->
