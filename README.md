@@ -1,4 +1,4 @@
-# PROJECT - ENTOFU
+# Project - ENTOFU
 
 개발기간 : 2022.05 ~ 2023.3 
 
@@ -18,14 +18,14 @@
 ### 기능
 - - -
 - 앱에서 스크랩, 번역, 듣기, 필기, 단어장, 단어 발음 테스트 등의 학습 기능을 제공
-- 매일 업로드 되는 영어 기사를 선택하고 쉬운 모션으로 학습
+- 매일 업로드 되는 영어 기사를 선택하고 다양한 모션으로 학습에 도움
 - 이미지, URL로 영어 지문을 앱에 업로드하여 개인 교재로 활용
-- 다양한 형식의 랜덤 단어 퀴즈를 이용
+- 다양한 형식의 랜덤 단어 퀴즈를 이용하여 학습
 
 ### 화면 구성
  - - -
- <img src="https://i.postimg.cc/GhfXZsFy/Kakao-Talk-20240331-220251029.jpg" width="20%" height="400" align='left'/>
-<img src="https://i.postimg.cc/FKyGdW2y/Kakao-Talk-20240331-220251029-04.jpg" width="20%" height="400" align='center'/>
-<img src="https://i.postimg.cc/76q9g1kp/Kakao-Talk-20240331-220251029-02.jpg" width="20%" height="400" align='left'/>
-<img src="https://i.postimg.cc/y8SLBYjr/Kakao-Talk-20240331-220251029-03.jpg" width="20%" height="400" align='center'/>
+ <img src="https://i.postimg.cc/GhfXZsFy/Kakao-Talk-20240331-220251029.jpg" width="25%" height="30%" align='left'/>
+<img src="https://i.postimg.cc/FKyGdW2y/Kakao-Talk-20240331-220251029-04.jpg" width="25%" height="30%" align='center'/>
+<img src="https://i.postimg.cc/76q9g1kp/Kakao-Talk-20240331-220251029-02.jpg" width="25%" height="30%" align='left'/>
+<img src="https://i.postimg.cc/y8SLBYjr/Kakao-Talk-20240331-220251029-03.jpg" width="25%" height="30%" align='center'/>
 
