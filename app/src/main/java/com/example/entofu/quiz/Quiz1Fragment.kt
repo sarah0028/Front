@@ -35,7 +35,13 @@ class Quiz1Fragment : Fragment() {
         binding= FragmentQuiz1Binding.inflate(inflater)
         firstInit()
 
-        quiz1List.add(Quiz1Model("enWord","mean1","mean2","mean3","mean4"))
+        quiz1List.add(Quiz1Model("genial","실망","다정한","신체","소관"))
+        quiz1List.add(Quiz1Model("clampdown","단속","일회용의","열정","수학"))
+        quiz1List.add(Quiz1Model("cheer","환호","다정한","소관","단속"))
+        quiz1List.add(Quiz1Model("remit","소관","환호","대기","일회용의"))
+        quiz1List.add(Quiz1Model("disposable","일회용의","환호","대기","수학"))
+        quiz1List.add(Quiz1Model("challenge","단속","일회용의","환호","다정한"))
+
 //        for(i in (1..7)) getVocabQuizKoRequest()
         setAdapter()
 

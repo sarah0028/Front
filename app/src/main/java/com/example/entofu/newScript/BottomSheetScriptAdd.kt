@@ -88,36 +88,37 @@ class BottomSheetScriptAdd : BottomSheetDialogFragment()  {
 
         }
         binding.galleryButton.setOnClickListener {
-
-            if (ActivityCompat.checkSelfPermission(requireContext(), Manifest.permission.READ_EXTERNAL_STORAGE)
-                != PackageManager.PERMISSION_GRANTED) {
-                // When permission is not granted
-                // Result permission
-
-                ActivityCompat.requestPermissions(requireActivity(), arrayOf(Manifest.permission.READ_EXTERNAL_STORAGE), 2)
-//                ActivityCompat.requestPermissions(this, arrayOf(READ_EXTERNAL_STORAGE), 1)
-            }
-            else {
-                tesseract()
-                val intent = Intent(Intent.ACTION_PICK)
-                intent.type = MediaStore.Images.Media.CONTENT_TYPE
-                startForResult.launch(intent)
-            }
-
+            tesseract()
+            val intent = Intent(Intent.ACTION_PICK)
+            intent.type = MediaStore.Images.Media.CONTENT_TYPE
+            startForResult.launch(intent)
+//            if (ActivityCompat.checkSelfPermission(requireContext(), Manifest.permission.READ_EXTERNAL_STORAGE)
+//                != PackageManager.PERMISSION_GRANTED) {
+//                ActivityCompat.requestPermissions(requireActivity(), arrayOf(Manifest.permission.READ_EXTERNAL_STORAGE), 2)
+//
+//            }
+//            else {
+//                tesseract()
+//                val intent = Intent(Intent.ACTION_PICK)
+//                intent.type = MediaStore.Images.Media.CONTENT_TYPE
+//                startForResult.launch(intent)
+//            }
         }
         binding.FileAddButton.setOnClickListener {
-
             if (ActivityCompat.checkSelfPermission(requireActivity(), arrayOf(
                     Manifest.permission.READ_EXTERNAL_STORAGE,
                     Manifest.permission.WRITE_EXTERNAL_STORAGE,
                     Manifest.permission.MANAGE_EXTERNAL_STORAGE
                 ).toString()) != PackageManager.PERMISSION_GRANTED) {
+
                 if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
                     ActivityCompat.requestPermissions(requireActivity(),arrayOf(
                         Manifest.permission.READ_MEDIA_AUDIO,
                         Manifest.permission.READ_MEDIA_VIDEO,
                         Manifest.permission.READ_MEDIA_IMAGES
                     ), 1)
+                    selectPDF()
+
                 }
                 else {
                     ActivityCompat.requestPermissions(requireActivity(), arrayOf(

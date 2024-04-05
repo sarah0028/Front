@@ -38,6 +38,7 @@ class VocabularyFragment : Fragment() {
 
         firstInit()
         getMemberVocabulary()
+        setAdapter()
 
         val toolbar = mainAct.activityMainBinding!!.toolBar
         mainAct.setSupportActionBar(toolbar)

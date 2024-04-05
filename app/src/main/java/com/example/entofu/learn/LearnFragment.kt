@@ -75,6 +75,7 @@ class LearnFragment : Fragment() {
         val toolbar = mainAct.activityMainBinding!!.toolBar
         mainAct.setSupportActionBar(toolbar)
         setHasOptionsMenu(true)
+        mainAct.supportActionBar?.title=""
         mainAct.supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
 

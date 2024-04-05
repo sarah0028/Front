@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:theme="@android:style/Theme.Light"
     android:backgroundTint="@color/white"
-    tools:context=".splashScreen.StarterActivity">
+    tools:context=".StarterActivity">
 
     <ImageView
         android:contentDescription="@string/app_name"

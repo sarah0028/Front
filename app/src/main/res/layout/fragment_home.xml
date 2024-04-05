@@ -3,22 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTint="@color/backgroundTint"
     tools:context=".HomeFragment">
-
-<!--            <androidx.appcompat.widget.SearchView-->
-<!--                android:id="@+id/searchview"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_weight="1"-->
-<!--                android:iconifiedByDefault="false"-->
-<!--                android:paddingTop="5dp"-->
-<!--                android:theme="@style/ThemeOverlay.SearchView"-->
-<!--                app:iconifiedByDefault="false"-->
-<!--                android:paddingBottom="5dp"-->
-<!--                app:queryHint="search Here"-->
-<!--                app:queryBackground="@drawable/rounded_search_view"-->
-<!--                android:background="#f2f2f2" />-->
-
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/ScriptRecyclerView"
@@ -26,9 +12,7 @@
         android:layout_height="match_parent"
         android:layout_marginBottom="10dp"
         android:layout_marginEnd="10dp"
+        android:backgroundTint="@color/backgroundTint"
         android:layout_marginStart="10dp" />
-
-
-
 
 </FrameLayout>

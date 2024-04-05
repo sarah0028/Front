@@ -1,9 +1,8 @@
-package com.example.entofu
+package com.example.entofu.splashScreen
 
 import android.util.Log
 import android.view.View
 import android.view.animation.Animation
-import com.example.entofu.splashScreen.OnAnimationListener
 
 class StarterAnimation(
     private val resList: ArrayList<Animation>,

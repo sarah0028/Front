@@ -30,7 +30,7 @@
                 <ImageView
                     android:id="@+id/scriptImg"
                     android:layout_width="match_parent"
-                    android:layout_height="280dp"
+                    android:layout_height="240dp"
                     android:importantForAccessibility="no"
                     android:scaleType="fitXY"
                     android:src="@drawable/app_image"

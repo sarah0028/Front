@@ -43,6 +43,7 @@ class HomeFragment : Fragment() {
         if(mainAct.user.isLogin()) loginScriptAdd()
         else commonScriptAdd()
 
+
         val toolbar = mainAct.activityMainBinding!!.toolBar
         mainAct.setSupportActionBar(toolbar)
         setHasOptionsMenu(true)
@@ -83,25 +84,23 @@ class HomeFragment : Fragment() {
 
 
     private fun commonScriptAdd(){
-        scriptOne("COMMON",null,"title","No-one knew ",2323)
-        setAdapter()
 
-//        thread {
-//            val response = CreateScriptService().scriptService.getCommonScript().execute()
-//            CoroutineScope(Dispatchers.Main).launch {
-//                if (response.isSuccessful) {
-//                    for (scriptOne in response.body()!!.data!!){
-//                        scriptOne("Common",scriptOne.image,
-//                            scriptOne.title,scriptOne.content,scriptOne.idx)
-//                    }
-//                    setAdapter()
-//                } else {
-//                    Log.e("commonScriptCheck", "response-fail!")
-//                    Log.e("commonScriptCheck", "error code : " + response.code())
-//                    Log.e("commonScriptCheck", "error message : " + response.message())
-//                }
-//            }
-//        }
+        thread {
+            val response = CreateScriptService().scriptService.getCommonScript().execute()
+            CoroutineScope(Dispatchers.Main).launch {
+                if (response.isSuccessful) {
+                    for (scriptOne in response.body()!!.data!!){
+                        scriptOne("Common",scriptOne.image,
+                            scriptOne.title,scriptOne.content,scriptOne.idx)
+                    }
+                    setAdapter()
+                } else {
+                    Log.e("commonScriptCheck", "response-fail!")
+                    Log.e("commonScriptCheck", "error code : " + response.code())
+                    Log.e("commonScriptCheck", "error message : " + response.message())
+                }
+            }
+        }
     }
     private fun memberCommonScriptAdd(){
         thread {
